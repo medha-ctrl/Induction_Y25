@@ -151,7 +151,7 @@ Base class for all account types.
 | customer | Customer | Owner |
 | transactions | List<Transaction> | Transaction history |
 
-5. SavingsAccount Class
+### 5. SavingsAccount Class
 Inherits from Account.
 | Attribute|Type| Description|
 |---|---|---|
@@ -159,14 +159,14 @@ Inherits from Account.
 | minimumBalance | double | Minimum balance required |
 
 
-6. CurrentAccount Class
+### 6. CurrentAccount Class
 Inherits from Account.
 |Attribute|Type|Description|
 |---|---|---|
 | overdraftLimit | double | Allowed overdraft    |
 | businessName   | String | Business holder name |
 
-7.FixedDepositAccount Class
+### 7.FixedDepositAccount Class
 Inherits from Account.
 | Attribute|Type|Description|
 |---|---|---|
@@ -175,7 +175,7 @@ Inherits from Account.
 | FDInterestRate | double | FD interest      |
 | tenureMonths   | int    | Deposit duration |
 
-8.Transaction Class
+### 8.Transaction Class
 Represents all banking transactions.
 |Attribute|Type|Description|
 | --------------- | ------- | --------------------- |
@@ -187,7 +187,7 @@ Represents all banking transactions.
 | receiverAccount | Account | Receiver              |
 | status          | String  | Success/pending       |
 
-9.Loan Class
+### 9.Loan Class
 Represents customer loans.
 |Attribute|Type|Description|
 |---|---|---|
@@ -200,7 +200,7 @@ Represents customer loans.
 | loanStatus   | String   | Approved/pending  |
 | customer     | Customer | Loan owner        |
 
-10.ATM Card Class
+### 10.ATM Card Class
 Represents ATM/debit cards.
 |Attribute|Type|Description|
 |---|---|---|
@@ -212,7 +212,7 @@ Represents ATM/debit cards.
 | cardStatus    | String  | Active/blocked     |
 | linkedAccount | Account | Associated account |
 
-11.Employee Class
+### 11.Employee Class
 Represents bank employees.
 |Attribute|Type|Description|
 |---|---|---|
@@ -222,14 +222,14 @@ Represents bank employees.
 | salary       | double | Monthly salary  |
 | branch       | Branch | Assigned branch |
 
-12. Notification Class
+### 12. Notification Class
 Used for polymorphism.
 | Attribute | Type   | Description          |
 | --------- | ------ | -------------------- |
 | message   | String | Notification content |
 
 
-13.  SMSNotification Class
+### 13.  SMSNotification Class
 Implements Notification interface.
 | Attribute|Type| Description|
 |---|---|---|
@@ -237,7 +237,7 @@ Implements Notification interface.
 | message        | String | SMS content      |
 | deliveryStatus | String | Sent/pending     |
 
-14. EmailNotification Class
+### 14. EmailNotification Class
 Implements Notification interface.
 |Attribute|Type|Description|
 |---|---|---|
